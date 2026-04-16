@@ -6,3 +6,7 @@ resources:
 
 patches:
 - path: expose-webhook-receiver.yaml
+  target:
+    kind: Service
+    name: webhook-receiver
+    namespace: flux-system
